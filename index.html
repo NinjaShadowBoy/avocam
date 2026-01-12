@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Avocam | Premium Grafted Avocado & Fruit Seedlings Cameroon</title>
+    <meta name="description" content="Avocam specializes in premium grafted fruit plants in Dschang, Cameroon. From Hass avocados to citrus & orchard management. Boost your yields with agricultural experts.">
+    <meta name="keywords" content="Avocado seedlings Cameroon, grafted fruit plants, Hass Avocado, Dschang agriculture, Menoua fruit production, Avocam, orchard management Cameroon">
+    <meta name="author" content="Avocam">
+    
+    <!-- Facebook / OpenGraph -->
+    <meta property="og:title" content="Avocam | Expert Fruit Seedlings & Orchard Solutions">
+    <meta property="og:description" content="Invest in a fertile future. Premium grafted avocados, citrus, and exotic plants in the Menoua region.">
+    <meta property="og:image" content="https://z-p3-scontent.fdla3-2.fna.fbcdn.net/v/t39.30808-6/601818023_122101851543170409_5788179455885213700_n.png">
+    <meta property="og:url" content="https://avocam.cm">
+    <link rel="canonical" href="https://avocam.cm/">
+    <meta name="robots" content="index, follow">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AvocamOfficial">
+    <meta name="twitter:title" content="Avocam | Premium Grafted Avocado & Fruit Seedlings Cameroon">
+    <meta name="twitter:description" content="Premium grafted avocados, citrus and orchard services in Dschang, Menoua. Reserve quality plants, get free technical advice.">
+    <meta name="twitter:image" content="https://z-p3-scontent.fdla3-2.fna.fbcdn.net/v/t39.30808-6/601818023_122101851543170409_5788179455885213700_n.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Accessibility: skip link */
+        .skip-link { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+        .skip-link:focus { left: 20px; top: 20px; width: auto; height: auto; background: #fff; padding: 8px 12px; border-radius: 6px; z-index: 2000; }
+        /* Visually-hidden helper for accessibility without affecting layout */
+        .sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+        /* Ensure anchored sections are not hidden behind fixed header */
+        html { scroll-padding-top: 110px; }
+        :root {
+            --header-height: 90px;
+            --primary: #6b8e23; /* Avocado Green */
+            --primary-dark: #4a6316;
+            --accent: #d4af37; /* Harvest Gold */
+            --earth: #2d3319;
+            --cream: #fdfbf7;
+            --glass: rgba(255, 255, 255, 0.85);
+            --shadow: 0 10px 40px rgba(0,0,0,0.08);
+            --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--cream);
+            color: var(--earth);
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+
+        /* --- Animations --- */
+        .reveal { opacity: 0; transform: translateY(30px); transition: var(--transition); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* --- Header --- */
+        header {
+            position: fixed;
+            top: 0; width: 100%; height: var(--header-height);
+            padding: 0 8%;
+            display: flex; justify-content: space-between; align-items: center;
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(107, 142, 35, 0.1);
+        }
+
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem; font-weight: 700;
+            color: var(--earth); text-decoration: none;
+            letter-spacing: -1px;
+        }
+        .logo span { color: var(--primary); }
+
+        nav { display: flex; gap: 2.5rem; }
+        nav a {
+            text-decoration: none; color: var(--earth);
+            font-weight: 700; font-size: 0.95rem;
+            position: relative; transition: var(--transition);
+        }
+        nav a::after {
+            content: ''; position: absolute; width: 0; height: 2px;
+            bottom: -5px; left: 0; background: var(--primary);
+            transition: var(--transition);
+        }
+        nav a:hover::after { width: 100%; }
+
+        /* --- Language Toggle --- */
+        .lang-switcher {
+            display: flex; gap: 0.5rem; background: #eee;
+            padding: 5px; border-radius: 40px;
+        }
+        .lang-btn {
+            background: none; border: none; cursor: pointer;
+            padding: 5px 12px; border-radius: 30px; transition: var(--transition);
+            display: flex; align-items: center; opacity: 0.4;
+        }
+        .lang-btn.active { background: white; opacity: 1; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .lang-btn svg { width: 20px; height: 14px; border-radius: 2px; }
+
+        /* --- Hero --- */
+        .hero {
+            height: calc(100vh - var(--header-height));
+            display: flex; align-items: center;
+            padding: var(--header-height) 8% 0 8%;
+            background: linear-gradient(135deg, rgba(253, 251, 247, 0.9) 20%, rgba(253, 251, 247, 0.7) 100%), 
+                        url('https://z-p3-scontent.fdla3-2.fna.fbcdn.net/v/t39.30808-6/601818023_122101851543170409_5788179455885213700_n.png?stp=dst-png_s960x960&_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&oh=00_Afr_KUqfgjAtzNJOK-2Y4DXBoCnHvh_S3xOaC-dz11Ajfg&oe=696B3700') center/cover;
+        }
+
+        .hero-text { max-width: 750px; }
+        .hero-text h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(3rem, 6vw, 5rem);
+            line-height: 1.1; margin-bottom: 2rem;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, var(--earth), var(--primary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn {
+            padding: 1.2rem 2.5rem; border-radius: 50px;
+            font-weight: 700; display: inline-flex; align-items: center; gap: 12px;
+            transition: var(--transition); text-decoration: none; border: none;
+            cursor: pointer; font-size: 1rem;
+        }
+        .btn-primary { 
+            background: linear-gradient(45deg, var(--primary), var(--primary-dark));
+            color: white; box-shadow: 0 10px 20px rgba(107, 142, 35, 0.3);
+        }
+        .btn-primary:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(107, 142, 35, 0.4); }
+
+        /* --- Cards & Sections --- */
+        .section-padding { padding: 100px 8%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; }
+
+        .glass-card {
+            background: var(--white);
+            padding: 3rem; border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.6);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .glass-card:hover { transform: scale(1.03); }
+
+        .icon-box {
+            width: 70px; height: 70px; background: rgba(107, 142, 35, 0.1);
+            border-radius: 15px; display: flex; align-items: center; justify-content: center;
+            margin-bottom: 1.5rem; color: var(--primary);
+        }
+        .icon-box span { font-size: 2.5rem; }
+
+        /* --- Services --- */
+        .dark-section { background: var(--earth); color: var(--cream); position: relative; overflow: hidden; }
+        .dark-section h2 { color: white; font-family: 'Cormorant Garamond', serif; font-size: 3rem; margin-bottom: 1rem; }
+        
+        .service-item {
+            padding: 2rem; border-left: 3px solid var(--primary);
+            background: rgba(255,255,255,0.03); transition: var(--transition);
+        }
+        .service-item:hover { background: rgba(255,255,255,0.07); padding-left: 2.5rem; }
+
+        /* --- Floating WhatsApp --- */
+        .whatsapp-float {
+            position: fixed; bottom: 30px; right: 30px;
+            width: 65px; height: 65px; background: #25d366;
+            color: white; border-radius: 50%; display: flex;
+            align-items: center; justify-content: center;
+            font-size: 2.2rem; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+            z-index: 999; transition: var(--transition);
+        }
+        .whatsapp-float:hover { transform: rotate(15deg) scale(1.1); }
+
+        /* --- Mobile --- */
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 2.5rem; cursor: pointer; color: var(--earth); }
+
+        @media (max-width: 992px) {
+            .mobile-menu-btn { display: block; }
+            nav {
+                position: absolute; top: 90px; right: -100%; width: 280px; height: auto;
+                background: var(--glass); backdrop-filter: blur(20px); flex-direction: column;
+                padding: 40px; transition: 0.5s; box-shadow: var(--shadow); border-radius: 0 0 0 20px;
+            }
+            nav.active { right: 0; }
+            .hero { text-align: center; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- JSON-LD Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AgricultureService",
+      "name": "Avocam",
+      "description": "Premium grafted avocado and fruit plants in Cameroon.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dschang",
+        "addressRegion": "West",
+        "addressCountry": "CM"
+      },
+      "telephone": "+237696144135"
+    }
+    </script>
+
+    <header>
+        <a href="#" class="logo" aria-label="Avocam">
+            <span data-en="Avo" data-fr="Avo">Avo</span><span data-en="cam" data-fr="cam">cam</span>
+        </a>
+        
+        <div style="display: flex; align-items: center; gap: 2rem;">
+            <nav id="mainNav" aria-label="Main navigation">
+                <a href="#plants" data-en="Our Plants" data-fr="Nos Plants">Our Plants</a>
+                <a href="#services" data-en="Services" data-fr="Services">Services</a>
+                <a href="#contact" data-en="Contact" data-fr="Contact">Contact</a>
+            </nav>
+
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" title="English">
+                    <svg viewBox="0 0 640 480"><path fill="#012169" d="M0 0h640v480H0z"/><path fill="#FFF" d="m75 0 244 181L562 0h78v62L400 240l240 178v62h-78L320 300 77 480H0v-62l240-178L0 62V0h75z"/><path fill="#C8102E" d="m424 281 216 159v40L369 281h55zM640 0v3L447 149h-55L640 0zM0 440l216-159h55L0 480v-40zM0 0l239 176h-55L0 44V0z"/><path fill="#FFF" d="M240 0h160v480H240zM0 160h640v160H0z"/><path fill="#C8102E" d="M0 192h640v96H0zM272 0h96v480h-96z"/></svg>
+                </button>
+                <button class="lang-btn" data-lang="fr" title="Français">
+                    <svg viewBox="0 0 640 480"><g fill-rule="evenodd" stroke-width="1pt"><path fill="#fff" d="M0 0h640v480H0z"/><path fill="#00267f" d="M0 0h213.3v480H0z"/><path fill="#f31830" d="M426.7 0H640v480H426.7z"/></g></svg>
+                </button>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+
+    <a href="https://wa.me/23796144135" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        <span class="sr-only" data-en="Chat on WhatsApp" data-fr="Discuter sur WhatsApp">Chat on WhatsApp</span>
+    </a>
+
+    <section id="main" class="hero">
+        <div class="hero-text">
+            <h1 class="reveal">
+                <span data-en="Harvest Success With" data-fr="Récoltez le Succès Avec">Harvest Success With</span><br>
+                <span class="gradient-text" data-en="Premium Grafted Plants" data-fr="Des Plants Greffés Premium">Premium Grafted Plants</span>
+            </h1>
+            <p class="reveal" style="font-size: 1.2rem; margin-bottom: 2.5rem; opacity: 0.8;" data-en="The home of excellence in avocado cultivation and orchard management in Cameroon's Menoua region." data-fr="La référence de l'excellence en culture d'avocats et gestion de vergers dans la Menoua au Cameroun.">
+                The home of excellence in avocado cultivation and orchard management in Cameroon's Menoua region.
+            </p>
+            <div class="reveal">
+                <a href="#plants" class="btn btn-primary">
+                    <span data-en="Explore Varieties" data-fr="Explorer les Variétés">Explore Varieties</span>
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section-padding" style="background: white;">
+        <div class="grid" style="text-align: center;">
+            <div class="reveal">
+                <h2 style="font-size: 3rem; color: var(--primary);">2-3 Yrs</h2>
+                <p data-en="Time to first harvest" data-fr="Temps de première récolte">Time to first harvest</p>
+            </div>
+            <div class="reveal">
+                <h2 style="font-size: 3rem; color: var(--primary);">100%</h2>
+                <p data-en="Expert Grafted Quality" data-fr="Qualité de Greffe Experte">Expert Grafted Quality</p>
+            </div>
+            <div class="reveal">
+                <h2 style="font-size: 3rem; color: var(--primary);">FREE</h2>
+                <p data-en="Technical Advice" data-fr="Conseils Techniques">Technical Advice</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plants Grid -->
+    <section class="section-padding" id="plants">
+        <div style="text-align: center; margin-bottom: 4rem;" class="reveal">
+            <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 3.5rem;" data-en="Available This Season" data-fr="Disponible Cette Saison">Available This Season</h2>
+            <p data-en="Engineered for high-yield and climate resilience." data-fr="Conçus pour un haut rendement et une résilience climatique.">Engineered for high-yield and climate resilience.</p>
+            <p class="reveal" style="margin-top:1rem; opacity:0.9; max-width:700px; margin-left:auto; margin-right:auto;" data-en="Our Hass avocado seedlings are selected for early production (often bearing from 2 years after planting), high oil content and market-preferred quality — ideal for both smallholders and commercial orchards. Contact us to reserve Hass plants this season." data-fr="Nos plants Hass sont sélectionnés pour une production précoce (souvent dès 2 ans après plantation), une forte teneur en huile et une qualité prisée sur le marché — idéals pour petits exploitants et vergers commerciaux. Contactez-nous pour réserver des plants Hass cette saison.">Our Hass avocado seedlings are selected for early production (often bearing from 2 years after planting), high oil content and market-preferred quality — ideal for both smallholders and commercial orchards. Contact us to reserve Hass plants this season.</p>
+        </div>
+        
+        <div class="grid">
+            <div class="glass-card reveal">
+                <div class="icon-box"><span class="material-symbols-outlined">park</span></div>
+                <h3 data-en="Avocados" data-fr="Avocatiers">Avocatiers</h3>
+                <p data-en="The world's best Hass & Fuerte varieties, alongside our selected Local Elites." data-fr="Les meilleures variétés mondiales Hass & Fuerte, aux côtés de nos Élites Locales."></p>
+            </div>
+            <div class="glass-card reveal">
+                <div class="icon-box"><span class="material-symbols-outlined">nutrition</span></div>
+                <h3 data-en="Citrus & Fruits" data-fr="Agrumes & Fruits">Agrumes & Fruits</h3>
+                <p data-en="Grafted Oranges, Lemons, Mangoes, and exotic Apples adapted to our soils." data-fr="Orangers, Citronniers, Manguiers greffés, et Pommiers adaptés à nos sols."></p>
+            </div>
+            <div class="glass-card reveal">
+                <div class="icon-box"><span class="material-symbols-outlined">energy_savings_leaf</span></div>
+                <h3 data-en="Exotic Selection" data-fr="Sélection Exotique">Sélection Exotique</h3>
+                <p data-en="Soursop, Sapotille, Banana, and Plantain PIF seedlings for commercial farms." data-fr="Corossoliers, Sapotilles, et plants de Bananier/Plantain PIF pour exploitations."></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ: common buyer questions -->
+    <section class="section-padding" id="faq">
+        <div style="max-width:900px; margin:0 auto;">
+            <h2 style="font-family: 'Cormorant Garamond', serif; font-size:2.8rem; text-align:center; margin-bottom:1rem;" data-en="Frequently Asked Questions" data-fr="Questions Fréquemment Posées">Frequently Asked Questions</h2>
+            <div class="grid" style="grid-template-columns: 1fr; gap:1rem;">
+                <div class="glass-card reveal">
+                    <h4 data-en="Why choose grafted fruit plants?" data-fr="Pourquoi choisir des plants fruitiers greffés?">Why choose grafted fruit plants?</h4>
+                    <p data-en="Grafted plants fruit earlier (2–3 years), deliver consistent, variety-faithful fruit, increase resistance to local pests/diseases and improve yield reliability — speeding your return on investment." data-fr="Les plants greffés fructifient plus tôt (2–3 ans), produisent des fruits fidèles à la variété, augmentent la résistance aux ravageurs/maladies locales et améliorent la régularité du rendement — accélérant votre retour sur investissement.">Grafted plants fruit earlier (2–3 years), deliver consistent, variety-faithful fruit, increase resistance to local pests/diseases and improve yield reliability — speeding your return on investment.</p>
+                </div>
+                <div class="glass-card reveal">
+                    <h4 data-en="How soon will I see fruit?" data-fr="Quand verrai-je des fruits?">How soon will I see fruit?</h4>
+                    <p data-en="With our grafted seedlings you can expect first harvests around 2–3 years depending on variety and farm management." data-fr="Avec nos plants greffés, attendez-vous à des premières récoltes vers 2–3 ans selon la variété et l'entretien du verger.">With our grafted seedlings you can expect first harvests around 2–3 years depending on variety and farm management.</p>
+                </div>
+                <div class="glass-card reveal">
+                    <h4 data-en="Where is Avocam located?" data-fr="Où se trouve Avocam?">Where is Avocam located?</h4>
+                    <p data-en="We operate from Village Bafou, Nkong-Ni, Menoua. We serve farmers across the Menoua department and can advise on varieties adapted to your land." data-fr="Nous opérons depuis le village Bafou, Nkong-Ni, Menoua. Nous servons les agriculteurs du département de la Menoua et conseillons sur les variétés adaptées à votre sol.">We operate from Village Bafou, Nkong-Ni, Menoua. We serve farmers across the Menoua department and can advise on varieties adapted to your land.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Orchard Mistakes -->
+    <section class="section-padding dark-section" id="mistakes">
+        <div style="max-width:1000px; margin:0 auto;">
+            <h2 style="font-family: 'Cormorant Garamond', serif; font-size:3rem; text-align:center; margin-bottom:2rem;" data-en="3 Common Orchard Mistakes to Avoid" data-fr="3 Erreurs Courantes à Éviter dans les Vergers">3 Common Orchard Mistakes to Avoid</h2>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:2rem;">
+                <div class="service-item reveal">
+                    <h4 data-en="Wrong Variety Choice" data-fr="Mauvais Choix de Variété">Wrong Variety Choice</h4>
+                    <p data-en="Selecting varieties not suited to your climate or soil can slow growth and reduce yields. Choose robust, productive varieties for your region." data-fr="Choisir des variétés inadaptées à votre climat ou sol peut ralentir la croissance et réduire les rendements. Optez pour des variétés robustes et productives pour votre région."></p>
+                </div>
+                <div class="service-item reveal">
+                    <h4 data-en="Neglected Maintenance" data-fr="Entretien Négligé">Neglected Maintenance</h4>
+                    <p data-en="Irrigation, pruning, and fertilization are essential. Skipping them leads to poor fruit quality and disease vulnerability. Regular care ensures better yields." data-fr="L'irrigation, la taille et la fertilisation sont essentielles. Les négliger conduit à une mauvaise qualité des fruits et à une vulnérabilité aux maladies. Un entretien régulier assure de meilleurs rendements."></p>
+                </div>
+                <div class="service-item reveal">
+                    <h4 data-en="Ignoring Pests & Diseases" data-fr="Ignorer les Ravageurs et Maladies">Ignoring Pests & Diseases</h4>
+                    <p data-en="Waiting for problems to appear can be costly. Proactive monitoring and preventive measures protect your orchard and maintain productivity." data-fr="Attendre que les problèmes apparaissent peut être coûteux. Une surveillance proactive et des mesures préventives protègent votre verger et maintiennent la productivité."></p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:3rem;">
+                <a href="tel:+237696144135" class="btn" style="border: 1px solid var(--primary); color: white;" data-en="Get Expert Advice" data-fr="Obtenir des Conseils d'Expert">Get Expert Advice</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Services -->
+    <section class="section-padding dark-section" id="services">
+        <div class="grid">
+            <div class="reveal">
+                <h2 data-en="More Than Just A Nursery" data-fr="Plus Qu'une Simple Pépinière">More Than Just A Nursery</h2>
+                <p style="margin-bottom: 2rem; opacity: 0.8;" data-en="We partner with you from soil testing to the final market sale of your fruits." data-fr="Nous sommes votre partenaire, de l'analyse du sol à la vente finale de vos fruits."></p>
+                <a href="tel:+237696144135" class="btn" style="border: 1px solid var(--primary); color: white;" data-en="Call Expert" data-fr="Appeler un Expert">Call Expert</a>
+            </div>
+            <div class="grid reveal" style="grid-template-columns: 1fr;">
+                <div class="service-item">
+                    <h4 data-en="Orchard Management" data-fr="Gestion de Vergers">Orchard Management</h4>
+                    <p data-en="Creation, maintenance, and technical monitoring of your fruit plantations." data-fr="Création, entretien et suivi technique de vos plantations fruitières."></p>
+                </div>
+                <div class="service-item">
+                    <h4 data-en="Avocado Oil" data-fr="Huile d'Avocat">Huile d'Avocat</h4>
+                    <p data-en="Extraction and sale of 100% pure, cosmetic and culinary avocado oil." data-fr="Extraction et vente d'huile d'avocat 100% pure, cosmétique et alimentaire."></p>
+                </div>
+                <div class="service-item">
+                    <h4 data-en="High-Yield Seeds" data-fr="Semences à Haut Rendement">High-Yield Seeds</h4>
+                    <p data-en="Selection of improved Maize, Cassava, and Potato seeds." data-fr="Sélection de semences améliorées de Maïs, Manioc et Patates."></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="section-padding" id="contact" style="background: #111; color: white; text-align: center;">
+        <div class="reveal">
+            <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 3rem; margin-bottom: 2rem;" data-en="Ready to Start?" data-fr="Prêt à commencer ?">Ready to Start?</h2>
+            <p style="margin-bottom: 3rem; opacity: 0.6;">Village Bafou, Menoua, West Region, Cameroon</p>
+            
+            <div class="grid" style="max-width: 800px; margin: 0 auto;">
+                <div>
+                    <i class="fas fa-phone" style="color: var(--primary);" aria-hidden="true"></i>
+                    <p><a href="tel:+237696144135" style="color:inherit; text-decoration:none;"><span data-en="+237 696 144 135" data-fr="+237 696 144 135">+237 696 144 135</span></a><br><a href="tel:+237680363645" style="color:inherit; text-decoration:none;"><span data-en="+237 680 36 36 45" data-fr="+237 680 36 36 45">+237 680 36 36 45</span></a></p>
+                </div>
+                <div>
+                    <i class="fab fa-facebook" style="color: var(--primary);"></i>
+                    <p><a href="https://facebook.com/AvocamOfficial" target="_blank" style="color:inherit; text-decoration:none;"><span data-en="Avocam Official" data-fr="Avocam Officiel">Avocam Official</span></a></p>
+                </div>
+                <div>
+                    <i class="fas fa-envelope" style="color: var(--primary);"></i>
+                    <p><a href="mailto:avocam237@gmail.com" style="color:inherit; text-decoration:none;"><span data-en="avocam237@gmail.com" data-fr="avocam237@gmail.com">avocam237@gmail.com</span></a></p>
+                </div>
+            </div>
+            
+            <p style="margin-top: 5rem; font-size: 0.8rem; opacity: 0.3;" data-en="© 2026 AVOCAM. Premium Agricultural Solutions." data-fr="© 2026 AVOCAM. Solutions Agricoles Premium.">© 2026 AVOCAM. Premium Agricultural Solutions.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll Reveal Animation
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Mobile Menu
+        function toggleMenu() {
+            document.getElementById('mainNav').classList.toggle('active');
+        }
+
+        // Language Switcher
+        const langBtns = document.querySelectorAll('.lang-btn');
+        langBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.getAttribute('data-lang');
+                langBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                document.querySelectorAll('[data-en]').forEach(el => {
+                    const text = el.getAttribute(`data-${lang}`);
+                    if (text) el.textContent = text;
+                });
+            });
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mainNav').classList.remove('active');
+            });
+        });
+    </script>
+
+    <!-- Additional structured data: Organization + FAQ for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "AVOCAM",
+          "url": "https://avocam.cm",
+          "logo": "https://z-p3-scontent.fdla3-2.fna.fbcdn.net/v/t39.30808-6/601818023_122101851543170409_5788179455885213700_n.png",
+          "sameAs": ["https://facebook.com/AvocamOfficial"]
+        },
+        {
+          "@type": "LocalBusiness",
+          "name": "AVOCAM",
+          "telephone": "+237696144135",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dschang",
+            "addressRegion": "West",
+            "addressCountry": "CM"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Why choose grafted fruit plants?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Grafted plants fruit earlier (2–3 years), produce consistent, higher-quality fruit, and are more resistant to local pests and diseases." }
+            },
+            {
+              "@type": "Question",
+              "name": "How soon will I see fruit?",
+              "acceptedAnswer": { "@type": "Answer", "text": "With our grafted seedlings you can expect first harvests around 2–3 years depending on variety and farm care." }
+            },
+            {
+              "@type": "Question",
+              "name": "Where is Avocam located?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Village Bafou, Nkong-Ni, Menoua, West Region, Cameroon. We serve farmers across the Menoua department." }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</body>
+</html>
